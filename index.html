@@ -12,17 +12,27 @@
 <body>
     <ul class="navList">
         <h2>Jacob Rangnitt</h2>
-        <li><a href="#">Contact</a></li>
+        <button id="contactBtn" onclick="onClickContact(containerMain, containerContact)">Contact</button>
     </ul>
 
     <div class="contentClass">
-        <div class="container">
+        <h2 id="colorist-title">Colorist</h2>
+
+        <div class="container" id="containerContact">
+            <h3>Contact</h3>
+            <h3>Mail: hi@jacobrangnitt.com</h3>
+            <h3>Phone: +46 123 456 789</h3>
+            <button id="quitContactBtn" onclick="onQuitContact()">Back to Portfolio</button>
+        </div>
+
+
+        <div class="container" id="containerMain">
             <h1>Portfolio</h1>
           
             <div class="gallery-wrap">
                 <div class="item item-1" onmouseover="mouseOver(id1)" onmouseout="mouseOut(id1)">
                     <div class="hover-active" id="hover-1">
-                        <a class="item-link" href="youtube.com">
+                        <a class="item-link" href="/Users/Albin/Desktop/Rangnitt/Portfolio/portfolioPage.html">
                         <h1>Closeups of motherhood</h1>
                         </a>
                     </div>
