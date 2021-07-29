@@ -1,202 +1,232 @@
-body, html{
-    padding: 0; 
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: white; 
-    background-color: black;
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
 }
 
-h1{
-    margin-bottom: 45px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 44px;
-    text-transform: uppercase;
-    color: white;
+h1 {
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: white;
 }
 
-h2{
-    font-family: 'Oswald', sans-serif;    
-    position: absolute;
-    text-transform: uppercase;
+h2 {
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  text-transform: uppercase;
 }
 
-h3{
-    font-family: 'Oswald', sans-serif;    
-    text-transform: uppercase;
-    font-size: 15px;
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 /* --------------------------------------------------- Navbar */
 
-.navList{
-    padding: 0;
-    margin: 0;
-    list-style-type: none; 
-    width: 200px;
-    height: 100%;
-    float: left;
-    background-color: black;
+.navList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 200px;
+  height: 100%;
+  float: left;
+  background-color: black;
 }
 
-.navList h2{
-    position: absolute;
-    top: 100px;
-    left: -20;
-    -webkit-transform: rotate(-270deg);
-    -moz-transform: rotate(-270deg);
-    -ms-transform: rotate(-270deg);
-    -o-transform: rotate(-270deg);
+.navList h2 {
+  position: absolute;
+  top: 100px;
+  left: -20;
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
 }
 
-.navList button{
-    font-family: 'Oswald', sans-serif; 
-    font-size: 15px;
-    font-weight: bold;
-    position: absolute;
-    text-transform: uppercase;
-    bottom: 100px;
-    left: 70px; 
-    text-decoration: none;
-    color: white; 
-    transition: 0.2s ease-in;
-    background: none;
-    border: none;
+.navList button {
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 100px;
+  left: 70px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in;
+  background: none;
+  border: none;
 }
 
-.navList button:hover{
-    color: white; 
-    transform: scale(1.05);
-    cursor: pointer;
+.navList button:hover {
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 /* --------------------------------------------------- Portfolio Content */
-.contentClass{
-    height: 100%;
-    overflow: auto;
+.contentClass {
+  height: 100%;
+  overflow: auto;
 }
 
-#containerMain{
-    padding: 30px 0;
-    margin: 0 auto;
-    /* width: 90%; */
-    width: 1140px;
-    transition: 0.3s ease-in-out;
+#containerMain {
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 90%;
+  /* width: 1140px; */
+  transition: 0.3s ease-in-out;
 }
 
-#containerContact{
-    opacity: 0%;
-    position: absolute; 
-    top: 300px;
-    left: 49%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    z-index: 999;
-    transition: 0.3s ease-in-out;
+#containerContact {
+  opacity: 0%;
+  position: absolute;
+  top: 300px;
+  left: 49%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
 }
-  
+
 .gallery-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 70vh;
-
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
 }
-  
+
 .item {
-    flex: 1;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    transition: flex 1.2s ease;
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 1.2s ease;
 }
 
-.item:hover{
-    flex: 20;
+.item:hover {
+  flex: 20;
 }
 
-.hover-active{
-    opacity: 0%;    
-    padding: 20px;
-    color: red;
-    position: absolute;
-    left: 100;
-    bottom: 150px;
-    transition: 0.5s ease-in-out;
-    /* -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg); */
+.hover-active {
+  opacity: 0%;
+  padding: 20px;
+  color: red;
+  position: absolute;
+  left: 100;
+  bottom: 150px;
+  transition: 0.5s ease-in-out;
 }
 
-.hover-active h1{
-    margin-bottom: 45px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: white;
-    transition: 0.2s ease-in-out ;
+.hover-active h1 {
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  transition: 0.2s ease-in-out;
 }
 
-.hover-active h1:hover{
-    transform: scale(1.05);
+.hover-active h1:hover {
+  transform: scale(1.05);
 }
 
-
-.item-link{
-    text-decoration: none;
+.item-link {
+  text-decoration: none;
 }
 
-.item-1 { 
-    background-image: url('/Users/Albin/Desktop/Rangnitt/Resources/img/test.jpg');
-}
-  
-.item-2 { 
-    background-image: url('/Users/Albin/Desktop/Rangnitt/Resources/img/test2.png');
-}
-  
-.item-3 { 
-    background-image: url('https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80');
-}
-  
-.item-4 { 
-    background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80');
-}
-  
-.item-5 { 
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
+.item-1 {
+  background-image: url("/Users/albinglad/Desktop/rangnitt/Rangnitt-Webb/Resources/img/CloseupsOfMotherhood.jpg");
 }
 
-.item-6 { 
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
-}
-.item-7 { 
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
-}
-.item-8 { 
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
+.item-2 {
+  background-image: url("/Users/albinglad/Desktop/rangnitt/Rangnitt-Webb/Resources/img/UnderstatementUnderwear.png");
 }
 
+.item-3 {
+  background-image: url("/Users/albinglad/Desktop/rangnitt/Rangnitt-Webb/Resources/img/HeadOfBartenders.png");
+}
+
+.item-4 {
+  background-image: url("/Users/albinglad/Desktop/rangnitt/Rangnitt-Webb/Resources/img/ThaiBasil.png");
+}
+
+.item-5 {
+  background-image: url("/Users/albinglad/Desktop/rangnitt/Rangnitt-Webb/Resources/img/HeadOfChefsÅre.png");
+}
+
+.item-6 {
+  background-image: url("/Users/albinglad/Desktop/rangnitt/Rangnitt-Webb/Resources/img/TheSilkyOne.png");
+}
+.item-7 {
+  background-image: url("/Users/albinglad/Desktop/rangnitt/Rangnitt-Webb/Resources/img/NorlingStudio.png");
+}
 
 /* --------------------------------------------------- Contact */
 
-#quitContactBtn{
-    font-family: 'Oswald', sans-serif;    
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 15px;
-    color: white;
-    background: none;
-    border: none;
-    transition: 0.2s ease-in-out;
-
+#quitContactBtn {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 15px;
+  color: white;
+  background: none;
+  border: none;
+  transition: 0.2s ease-in-out;
 }
 
-#quitContactBtn:hover{
-    cursor: pointer;
-    transform: scale(1.05);
+#quitContactBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* --------------------------------------------------- Mobile Content */
+
+.mobile-container {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.mobile-links {
+  display: list-item;
+}
+/* --------------------------------------------------- Screen Optimization */
+
+/* Webb */
+@media screen and (min-width: 737px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
+/* Plus Phone */
+@media screen and (max-width: 737px) {
+  .container {
+    display: none;
+  }
+
+  .navList {
+    width: 100px;
+  }
+
+  .navList h2 {
+    left: -60px;
+  }
+
+  .navList button {
+    font-size: 12px;
+    bottom: 100px;
+    left: 15px;
+  }
 }
